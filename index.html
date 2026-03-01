@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura & Grace | Indian Bridal & Unisex Salon</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Falling Petals Canvas -->
+    <canvas id="petals-canvas" class="falling-petals"></canvas>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="logo">Aura &amp; Grace</div>
+        <nav class="desktop-nav">
+            <a href="#services">Services</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact" class="btn-primary-sm">Book Now</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section class="hero">
+            <video class="hero-video" autoplay loop muted playsinline poster="https://images.unsplash.com/photo-1595955113978-8ba94de75073?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80">
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-make-up-artist-applying-eyeshadow-on-a-woman-46328-large.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-title"><span class="reveal-text">Aura &amp; Grace</span></h1>
+                <p class="hero-subtitle"><span class="reveal-text">The Ultimate Indian Bridal Experience</span></p>
+                <div class="hero-actions reveal-fade">
+                    <button class="btn-gold">Explore Services</button>
+                    <button class="btn-outline-gold">View Gallery</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. The Holi Offer -->
+        <section class="holi-offer">
+            <div class="splash-bg"></div>
+            <div class="offer-container fade-up">
+                <h2 class="offer-heading">🎨 HOLI SPECIAL OFFER</h2>
+                <div class="offer-body">
+                    <p class="offer-main-text">Are you a salon owner? Get a stunning website like this at just <strong>₹999!</strong></p>
+                    <p class="offer-urgency">Limited slots left. <strong>48h delivery.</strong></p>
+                    <p class="offer-highlight">Pay after site is live!</p>
+                    <p class="offer-details">Includes 1-month free hosting, subdomain &amp; SSL.</p>
+                </div>
+                <button class="btn-rani bounce-on-hover">Claim Your Website Now</button>
+            </div>
+        </section>
+
+        <!-- 3. Services (Smooth Accordion Tabs) -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="services-header center-text fade-up">
+                    <h2 class="section-title">Bespoke Services</h2>
+                    <p class="section-subtitle">Tailored treatments to bring out your inner radiance.</p>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <div class="accordion-item fade-up">
+                        <button class="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">Bridal Packages</span>
+                            <span class="accordion-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Step into your biggest day feeling like royalty. Our comprehensive bridal packages include HD or Airbrush makeup, intricate custom hairstyling, premium eyelash extensions, and flawless saree/lehenga draping.</p>
+                                <ul class="service-list">
+                                    <li>Pre-wedding consultation &amp; trial</li>
+                                    <li>Luxury international products (MAC, Huda, Charlotte Tilbury)</li>
+                                    <li>Exclusive bridal lounge access</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-up text-stagger-1">
+                        <button class="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">Hair Treatments</span>
+                            <span class="accordion-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Transform your locks with our signature hair care rituals. From deep conditioning and Keratin treatments to Botox and creative global coloring, our experts will give life to your tresses.</p>
+                                <ul class="service-list">
+                                    <li>Keratin &amp; Hair Botox</li>
+                                    <li>Balayage &amp; Highlights</li>
+                                    <li>Scalp Rejuvenation Therapy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item fade-up text-stagger-2">
+                        <button class="accordion-button" aria-expanded="false">
+                            <span class="accordion-title">Haldi/Mehndi Specials</span>
+                            <span class="accordion-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                            </span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-inner">
+                                <p>Vibrant, fresh, and lightweight styling tailored for daytime or lively evening rituals. We create a dewy, glowing look that perfectly complements your colorful festive attire.</p>
+                                <ul class="service-list">
+                                    <li>Dewy, sweat-proof makeup</li>
+                                    <li>Intricate floral jewelry styling</li>
+                                    <li>Messy braids &amp; contemporary hair design</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Gallery (Horizontal Scrolling Masonry Grid) -->
+        <section id="gallery" class="gallery scroll-container-wrapper">
+            <div class="gallery-header fade-up">
+                <h2 class="section-title text-center">Glowing Makeovers</h2>
+            </div>
+            
+            <div class="horizontal-scroll-container">
+                <div class="bento-track">
+                    <!-- Column 1 -->
+                    <div class="bento-col col-span-2 row-span-2">
+                        <div class="gallery-item large r-gold has-overlay">
+                            <img src="https://images.unsplash.com/photo-1595955113978-8ba94de75073?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Indian Bride">
+                            <div class="item-overlay"><span>Royal Bridal Look</span></div>
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="bento-col row-span-1">
+                        <div class="gallery-item rani has-overlay">
+                            <img src="https://images.unsplash.com/photo-1590740683057-0b190c1f20ac?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Makeup details">
+                            <div class="item-overlay"><span>Flawless HD Makeup</span></div>
+                        </div>
+                    </div>
+                    <div class="bento-col row-span-1">
+                        <div class="gallery-item gold has-overlay">
+                            <img src="https://images.unsplash.com/photo-1610173827002-62ce15e61298?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Jewelry">
+                            <div class="item-overlay"><span>Jewelry Styling</span></div>
+                        </div>
+                    </div>
+                    <!-- Column 3 -->
+                    <div class="bento-col col-span-2 row-span-2">
+                        <div class="gallery-item large border-gold has-overlay">
+                            <img src="https://images.unsplash.com/photo-1601639352125-83e0e7a25de7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Eye Makeup">
+                            <div class="item-overlay"><span>Signature Eyes</span></div>
+                        </div>
+                    </div>
+                    <!-- Column 4 -->
+                    <div class="bento-col row-span-1">
+                        <div class="gallery-item r-gold has-overlay">
+                            <img src="https://images.unsplash.com/photo-1583089892943-e02e5ee81cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Mehendi Hands">
+                            <div class="item-overlay"><span>Mehndi Ceremony</span></div>
+                        </div>
+                    </div>
+                    <div class="bento-col row-span-1">
+                        <div class="gallery-item rani has-overlay">
+                            <img src="https://images.unsplash.com/photo-1550588669-79aef46487e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Bridal Hands">
+                            <div class="item-overlay"><span>Elegant Details</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content fade-up">
+            <div class="footer-brand">
+                <h3 class="footer-logo">Aura &amp; Grace</h3>
+                <p>Curating timeless beauty experiences.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aura &amp; Grace Bridal Salon. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Custom Interactivity -->
+    <script src="script.js"></script>
+</body>
+</html>
