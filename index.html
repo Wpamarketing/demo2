@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manisha Roy | Frontend Developer & UI/UX Designer</title>
+    <meta name="description" content="Portfolio of Manisha Roy, a passionate front-end developer and UI/UX designer who creates beautiful, responsive, and user-friendly web experiences.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Fredoka:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Sparkles & Hearts (Decorative background elements) -->
+    <div class="decorations">
+        <div class="sparkle sparkle-1">✦</div>
+        <div class="sparkle sparkle-2">✦</div>
+        <div class="sparkle sparkle-3">✦</div>
+        <div class="heart heart-1">♥</div>
+        <div class="heart heart-2">♥</div>
+        <div class="heart heart-3">♥</div>
+        <div class="star star-1">★</div>
+        <div class="star star-2">★</div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-header">
+        <div class="navbar-container">
+            <a href="#home" class="logo">
+                <span class="logo-circle">MR</span>
+                <span class="logo-text">Manisha Roy</span>
+            </a>
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation" id="mobileNavToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <a href="#contact" class="btn-connect">Let's Connect <span class="btn-icon">✉</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Grid / Sections -->
+    <main class="main-content">
+        <!-- 1. Hero Section -->
+        <section id="home" class="section hero-section">
+            <div class="container hero-container">
+                <div class="hero-left">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Manisha<br>Roy <span class="heart-icon">♡</span></h1>
+                    <div class="badge-container">
+                        <span class="pill-badge">Developer - Creator - Problem Solver</span>
+                    </div>
+                    <p class="hero-description">
+                        I build modern, responsive and user-friendly websites that help brands grow and make an impact.
+                    </p>
+                    <div class="hero-ctas">
+                        <a href="#projects" class="btn btn-primary">View My Work <span class="arrow">→</span></a>
+                        <a href="#" class="btn btn-secondary" id="downloadCv">Download CV <span class="download-icon">📥</span></a>
+                    </div>
+                    
+                    <div class="scroll-down-container">
+                        <a href="#about" class="scroll-down-link">
+                            <div class="mouse-icon">
+                                <div class="wheel"></div>
+                            </div>
+                            <span>Scroll Down</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-right">
+                    <div class="illustration-wrapper hero-wrapper">
+                        <!-- Custom Sticky Notes & Floating Speech Bubbles -->
+                        <div class="bubble dream-bubble">
+                            <p>Dream</p>
+                            <p>Plan</p>
+                            <p>Code</p>
+                            <p>Succeed</p>
+                        </div>
+                        <img src="assets/hero_girl.png" alt="Manisha working at a desk" class="main-illustration hero-illustration">
+                        <div class="sticky-note">Keep Growing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wavy Section Divider -->
+        <div class="wave-divider wave-to-purple">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,53.05,22,81.13,31C164.71,57.77,248.8,69.58,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="section about-section bg-purple">
+            <div class="container about-container">
+                <div class="about-left">
+                    <h2 class="section-title">About Me <span class="heart-icon">♡</span></h2>
+                    <p class="about-text">
+                        I'm a passionate front-end developer who loves turning ideas into beautiful and functional digital experiences.
+                    </p>
+                    <p class="about-text">
+                        When I'm not coding, you'll find me sketching, reading, or sipping coffee while planning my next project!
+                    </p>
+                    
+                    <div class="about-traits">
+                        <div class="trait-card">
+                            <div class="trait-icon star-icon">✦</div>
+                            <h3>Creative</h3>
+                            <p>I love bringing ideas to life.</p>
+                        </div>
+                        <div class="trait-card">
+                            <div class="trait-icon target-icon">☉</div>
+                            <h3>Focused</h3>
+                            <p>I focus on quality and details.</p>
+                        </div>
+                        <div class="trait-card">
+                            <div class="trait-icon heart-icon">♥</div>
+                            <h3>Curious</h3>
+                            <p>I love learning new things.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-right">
+                    <div class="illustration-wrapper about-wrapper">
+                        <img src="assets/about_girl.png" alt="Manisha sitting cross-legged" class="main-illustration about-illustration">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fun Facts Horizontal Pill -->
+            <div class="fun-facts-container">
+                <div class="fun-facts-pill">
+                    <span class="fun-facts-title">Fun Facts ♡</span>
+                    <div class="fun-facts-grid">
+                        <span class="fact-tag"><span class="fact-emoji">🦉</span> Night Owl</span>
+                        <span class="fact-tag"><span class="fact-emoji">🎵</span> Music Lover</span>
+                        <span class="fact-tag"><span class="fact-emoji">📸</span> Capture Moments</span>
+                        <span class="fact-tag"><span class="fact-emoji">🍕</span> Pizza Addict</span>
+                        <span class="fact-tag"><span class="fact-emoji">📚</span> Book Worm</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wavy Divider to Soft Pink -->
+        <div class="wave-divider wave-to-pink">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86C248.8,69.58,164.71,57.77,81.13,31,53.05,22,26.9,8.75,0,0V120H1200V95.83C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- 3. My Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container skills-container">
+                <h2 class="section-title text-center">My Skills <span class="heart-icon">♡</span></h2>
+                
+                <div class="skills-grid">
+                    <!-- HTML Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-html">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.03 8H6.38l.24 2.87h11.67l-.28 3.13h-6l-.1-.86H8.97l.18 2.02 2.83.75 2.83-.75.47-5.32H6.88l-.24-2.87h12.15l-.26 3z"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">HTML</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar" style="width: 95%;"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+
+                    <!-- CSS Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-css">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.03 8H6.38l.24 2.87h11.67l-.28 3.13h-6l-.1-.86H8.97l.18 2.02 2.83.75 2.83-.75.47-5.32H6.88l-.24-2.87h12.15l-.26 3z" style="fill: #1572B6;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">CSS</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-css" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+
+                    <!-- JavaScript Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-js">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M0 0h24v24H0V0zm22.034 18.534c-.067-.386-.227-.777-.481-1.143-.3-.435-.764-.789-1.391-1.063-.585-.255-1.319-.449-2.203-.584-.39-.06-.809-.119-1.258-.18-.45-.06-.884-.135-1.303-.225-.42-.09-.78-.209-1.079-.36-.299-.15-.524-.345-.674-.585-.15-.24-.225-.555-.225-.945 0-.36.089-.675.27-.945.18-.27.435-.48.765-.63.33-.15.719-.24 1.169-.27.45-.03.914-.015 1.394.045.48.06.914.18 1.304.36.39.18.705.42.945.72.24.3.375.645.405 1.035h2.445c-.06-.72-.27-1.35-.63-1.89-.36-.54-.855-.99-1.485-1.35-.63-.36-1.365-.615-2.205-.765-.84-.15-1.724-.225-2.654-.225-.96 0-1.86.09-2.699.27-.84.18-1.575.465-2.205.855-.63.39-1.11.885-1.439 1.485-.33.6-.495 1.305-.495 2.115 0 .81.165 1.485.495 2.025.33.54.795.975 1.395 1.305.6.33 1.29.585 2.07.765.78.18 1.575.315 2.385.405.81.09 1.56.195 2.25.315.69.12 1.245.285 1.665.495.42.21.705.495.855.855.15.36.225.795.225 1.305 0 .54-.105.99-.315 1.35-.21.36-.51.645-.9.855-.39.21-.855.36-1.395.45-.54.09-1.11.135-1.71.135-.66 0-1.275-.06-1.845-.18-.57-.12-1.08-.315-1.53-.585-.45-.27-.81-.615-1.08-1.035-.27-.42-.42-.915-.45-1.485H1.72v.03c.012.72.203 1.368.573 1.944.37.576.883 1.042 1.54 1.399.657.357 1.428.622 2.313.795.885.172 1.83.259 2.835.259 1.02 0 1.98-.09 2.879-.27.9-.18 1.665-.465 2.295-.855.63-.39 1.11-.885 1.44-1.485.33-.6.495-1.32.495-2.16 0-.78-.15-1.425-.45-1.935-.3-.51-.72-.93-1.26-1.26-.54-.33-1.17-.585-1.89-.765-.72-.18-1.485-.33-2.295-.45-.81-.12-1.56-.24-2.25-.36-.69-.12-1.26-.285-1.71-.495-.45-.21-.765-.495-.945-.855-.18-.36-.27-.81-.27-1.35 0-.51.105-.945.315-1.305.21-.36.51-.645.9-.855.39-.21.855-.36 1.395-.45.54-.09 1.11-.135 1.71-.135.63 0 1.215.06 1.755.18.54.12 1.005.3 1.395.54.39.24.69.555.9.945.21.39.33.84.36 1.35z" style="fill: #F7DF1E;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-js" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+
+                    <!-- React Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-react">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 10.66c0-.3-.12-.58-.33-.8-.21-.21-.5-.33-.8-.33h-5.23c.31-.69.58-1.41.8-2.14l4.33-3.11c.23-.17.38-.43.41-.72.03-.29-.07-.58-.27-.79s-.49-.32-.78-.29c-.29.03-.55.18-.72.41l-3.11 4.33c-.73.22-1.45.49-2.14.8V2.78c0-.3-.12-.59-.33-.8-.21-.21-.5-.33-.8-.33s-.59.12-.8.33c-.21.21-.33.5-.33.8v5.23c-.69-.31-1.41-.58-2.14-.8L9.63 2.88c-.17-.23-.43-.38-.72-.41-.29-.03-.58.07-.79.27s-.32.49-.29.78c.03.29.18.55.41.72l4.33 3.11c.22.73.49 1.45.8 2.14H8.15c.31-.69.58-1.41.8-2.14L4.62 4.16c-.17-.23-.43-.38-.72-.41-.29-.03-.58.07-.79.27s-.32.49-.29.78c.03.29.18.55.41.72l3.11 4.33c-.73.22-1.45.49-2.14.8V5.63c0-.3-.12-.59-.33-.8-.21-.21-.5-.33-.8-.33s-.59.12-.8.33c-.21.21-.33.5-.33.8v5.23c-.69-.31-1.41-.58-2.14-.8L.78 6.94c-.23-.17-.5-.23-.78-.2-.29.03-.55.18-.72.41-.17.23-.23.5-.2.78.03.29.18.55.41.72l4.33 3.11c.22.73.49 1.45.8 2.14H.78c-.3 0-.58.12-.8.33-.21.21-.33.5-.33.8s.12.59.33.8c.21.21.5.33.8.33h5.23c-.31.69-.58 1.41-.8 2.14l-4.33 3.11c-.23.17-.38.43-.41.72-.03.29.07.58.27.79.2.2.49.32.78.29.29-.03.55-.18.72-.41l3.11-4.33c.73-.22 1.45-.49 2.14-.8v5.23c0 .3.12.59.33.8.21.21.5.33.8.33s.59-.12.8-.33c.21-.21.33-.5.33-.8v-5.23c.69.31 1.41.58 2.14.8l-3.11 4.33c-.17.23-.23.5-.2.78.03.29.18.55.41.72.23.17.5.23.78.2.29-.03.55-.18.72-.41l4.33-3.11c.22-.73.49-1.45.8-2.14h5.23c-.3.02-.58.14-.79.35-.21.21-.33.5-.33.8v5.23c0 .3.12.59.33.8.21.21.5.33.8.33s.59-.12.8-.33c.21-.21.33-.5.33-.8v-5.23c.69.31 1.41.58 2.14.8l3.11 4.33c.17.23.43.38.72.41.29.03.58-.07.79-.27s.32-.49.29-.78c-.03-.29-.18-.55-.41-.72l-4.33-3.11c-.22-.73-.49-1.45-.8-2.14H23.22c.3 0 .58-.12.8-.33.21-.21.33-.5.33-.8s-.12-.59-.33-.8c-.21-.21-.5-.33-.8-.33h-5.23c.31-.69.58-1.41.8-2.14l4.33-3.11c.23-.17.38-.43.41-.72.03-.29-.07-.58-.27-.79s-.49-.32-.78-.29c-.29.03-.55.18-.72.41l-3.11 4.33c-.73.22-1.45.49-2.14.8V10.66z" style="fill: #61DAFB;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">React</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-react" style="width: 85%;"></div>
+                        </div>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+
+                    <!-- Tailwind CSS Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-tailwind">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.002 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C7.666 17.818 9.027 19 12.002 19c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" style="fill: #38B2AC;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Tailwind CSS</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-tailwind" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+
+                    <!-- Git & GitHub Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-git">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.546 10.93L13.07 1.453a2.628 2.628 0 0 0-3.696 0L1.453 9.37a2.628 2.628 0 0 0 0 3.696l10.476 10.476a2.628 2.628 0 0 0 3.696 0l7.92-7.92a2.628 2.628 0 0 0 0-3.696zM12 18.06a1.5 1.5 0 1 1 .001-3.001A1.5 1.5 0 0 1 12 18.06zm0-4.5a1.5 1.5 0 1 1-.001-3.001A1.5 1.5 0 0 1 12 13.56zm4.5 0a1.5 1.5 0 1 1-.001-3.001A1.5 1.5 0 0 1 16.5 13.56z" style="fill: #F05032;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Git & GitHub</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-git" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- UI/UX Design Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-uiux">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" style="fill: #EA4C89;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">UI / UX Design</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-uiux" style="width: 75%;"></div>
+                        </div>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+
+                    <!-- Figma Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-figma">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8.5 0A4.25 4.25 0 0 0 4.25 4.25c0 1.63.92 3.04 2.27 3.75a4.249 4.249 0 0 0-2.27 3.75c0 1.63.92 3.04 2.27 3.75A4.25 4.25 0 1 0 12.75 12V4.25A4.25 4.25 0 0 0 8.5 0zM15.5 8.5A4.25 4.25 0 0 0 11.25 12.75V17A4.25 4.25 0 1 0 15.5 12.75V8.5z" style="fill: #F24E1E;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Figma</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-figma" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+
+                    <!-- Responsive Design Card -->
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-bg icon-responsive">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 10h-4v-7h4v7z" style="fill: #6F42C1;"/>
+                                </svg>
+                            </div>
+                            <span class="skill-name">Responsive Design</span>
+                        </div>
+                        <div class="skill-progress-bar-container">
+                            <div class="skill-progress-bar bar-responsive" style="width: 95%;"></div>
+                        </div>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                </div>
+
+                <!-- Interactive Sticky Speech Bubble -->
+                <div class="skills-speech-container">
+                    <div class="speech-bubble">
+                        <p>I'm always learning and improving to build better experiences! <span class="heart-icon">♡</span> <span class="smile-icon">☺</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wavy Divider to Projects -->
+        <div class="wave-divider wave-to-projects">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,53.05,22,81.13,31C164.71,57.77,248.8,69.58,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- 4. My Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container projects-container">
+                <h2 class="section-title text-center">My Projects <span class="heart-icon">♡</span></h2>
+                
+                <!-- Category Filter Capsules -->
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="websites">Websites</button>
+                    <button class="filter-btn" data-filter="uiux">UI / UX</button>
+                    <button class="filter-btn" data-filter="personal">Personal</button>
+                </div>
+
+                <!-- Projects Card Grid -->
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="websites">
+                        <div class="project-image-container">
+                            <img src="assets/project_plant.png" alt="Plant Store Project mockup" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web Development</span>
+                            <h3 class="project-name">Plant Store</h3>
+                            <p class="project-description">A responsive e-commerce website for plant lovers.</p>
+                            <a href="#" class="btn-view-project">View Project <span class="arrow-diagonal">↗</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="uiux personal">
+                        <div class="project-image-container">
+                            <img src="assets/project_task.png" alt="Task Tracker Project mockup" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Web App</span>
+                            <h3 class="project-name">Task Tracker</h3>
+                            <p class="project-description">A productivity app to manage tasks and boost focus.</p>
+                            <a href="#" class="btn-view-project">View Project <span class="arrow-diagonal">↗</span></a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="websites">
+                        <div class="project-image-container">
+                            <img src="assets/project_brew.png" alt="Brew & Beans Project mockup" class="project-image">
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category">Website</span>
+                            <h3 class="project-name">Brew & Beans</h3>
+                            <p class="project-description">A cozy coffee shop landing page with modern UI.</p>
+                            <a href="#" class="btn-view-project">View Project <span class="arrow-diagonal">↗</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom View All Button -->
+                <div class="text-center cta-projects-container">
+                    <a href="#" class="btn btn-pill-cta">View All Projects <span class="heart-icon">♡</span></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wavy Divider to Blog -->
+        <div class="wave-divider wave-to-blog">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86C248.8,69.58,164.71,57.77,81.13,31,53.05,22,26.9,8.75,0,0V120H1200V95.83C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- 5. My Blog Section -->
+        <section id="blog" class="section blog-section">
+            <div class="container blog-container">
+                <div class="blog-left">
+                    <h2 class="section-title">My Blog <span class="heart-icon">♡</span></h2>
+                    
+                    <div class="blog-list">
+                        <!-- Blog Post 1 -->
+                        <article class="blog-item">
+                            <div class="blog-thumb">
+                                <img src="assets/about_girl.png" alt="Post thumbnail" class="blog-thumb-img">
+                            </div>
+                            <div class="blog-details">
+                                <h3 class="blog-item-title">5 Tips to Write Clean HTML</h3>
+                                <p class="blog-item-excerpt">Writing clean HTML is the first step to building scalable websites...</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date">📅 May 15, 2026</span>
+                                    <span class="blog-readtime">⏱ 5 min read</span>
+                                </div>
+                                <a href="#" class="btn-readmore">Read More</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 2 -->
+                        <article class="blog-item">
+                            <div class="blog-thumb">
+                                <img src="assets/hero_girl.png" alt="Post thumbnail" class="blog-thumb-img">
+                            </div>
+                            <div class="blog-details">
+                                <h3 class="blog-item-title">Getting Started with React</h3>
+                                <p class="blog-item-excerpt">React is an amazing library. Here's how you can get started...</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date">📅 May 02, 2026</span>
+                                    <span class="blog-readtime">⏱ 7 min read</span>
+                                </div>
+                                <a href="#" class="btn-readmore">Read More</a>
+                            </div>
+                        </article>
+
+                        <!-- Blog Post 3 -->
+                        <article class="blog-item">
+                            <div class="blog-thumb">
+                                <img src="assets/project_task.png" alt="Post thumbnail" class="blog-thumb-img">
+                            </div>
+                            <div class="blog-details">
+                                <h3 class="blog-item-title">My Workspace Essentials</h3>
+                                <p class="blog-item-excerpt">Tools and things that help me stay productive every day.</p>
+                                <div class="blog-meta">
+                                    <span class="blog-date">📅 Apr 20, 2026</span>
+                                    <span class="blog-readtime">⏱ 4 min read</span>
+                                </div>
+                                <a href="#" class="btn-readmore">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                    
+                    <div class="blog-cta-wrapper">
+                        <a href="#" class="btn btn-pill-cta">View All Posts <span class="heart-icon">♡</span></a>
+                    </div>
+                </div>
+                
+                <div class="blog-right">
+                    <div class="illustration-wrapper blog-wrapper">
+                        <!-- Speech bubble -->
+                        <div class="bubble thoughts-bubble">
+                            <p>Ideas ✦</p>
+                            <p>Thoughts ✦</p>
+                            <p>Growth ✦</p>
+                        </div>
+                        <img src="assets/blog_girl.png" alt="Manisha writing in a notebook" class="main-illustration blog-illustration">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wavy Divider to Contact -->
+        <div class="wave-divider wave-to-contact">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V0C26.9,8.75,53.05,22,81.13,31C164.71,57.77,248.8,69.58,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <!-- 6. Let's Connect / Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container contact-container">
+                <div class="contact-left">
+                    <h2 class="section-title">Let's Connect! <span class="envelope-icon">✉</span></h2>
+                    <p class="contact-subtitle">Have a project in mind or just want to say hi? I'd love to hear from you.</p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <div class="input-icon-wrapper">
+                                <span class="input-icon">👤</span>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon-wrapper">
+                                <span class="input-icon">✉</span>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon-wrapper">
+                                <span class="input-icon">✏</span>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-icon-wrapper align-start">
+                                <span class="input-icon textarea-icon">💬</span>
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-submit">Send Message <span class="btn-icon">✉</span></button>
+                    </form>
+
+                    <!-- Social Icons at bottom left of panel -->
+                    <div class="socials-wrapper">
+                        <span class="socials-title">Find me on</span>
+                        <div class="socials-links">
+                            <a href="#" class="social-icon" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577v-2.234c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.43.372.82 1.102.82 2.222v3.293c0 .319.22.694.825.576C20.565 21.795 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Twitter">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 .001 12.325 6.162 6.162 0 0 0-.001-12.325zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+                                </svg>
+                            </a>
+                            <a href="mailto:manisha.roy@example.com" class="social-icon" aria-label="Email">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-right">
+                    <div class="illustration-wrapper contact-wrapper">
+                        <img src="assets/contact_girl.png" alt="Manisha waving" class="main-illustration contact-illustration">
+                        <div class="contact-bubble bubble">
+                            <p>Thank you! <span class="heart-icon">♡</span></p>
+                            <p>I'll get back to you soon. <span class="smile-icon">☺</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-main">
+        <p>&copy; 2026 Manisha Roy. Designed & Built with Love by <a href="https://mtechnology.dev" target="_blank" rel="noopener noreferrer">Mtechnology</a> 💖</p>
+    </footer>
+
+    <!-- Main JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
